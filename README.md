@@ -17,7 +17,6 @@
      - 各種Slack POST用関数 (slackPostMessage, addReaction, removeReactionなど)。
 3. **universalMessage.gs / functionMessage.gs** 
    - このスクリプト全体で使うシステムメッセージや固定的なユーザ文脈を定義する想定のファイル。 
-   - 実際のコード例は省略されており、補助的に読み込む形で利用します。
 4. **appscript.json** 
    - GAS プロジェクトの設定ファイル。 
    - ライブラリ依存 (SlackApp, SlackApi) が記載されています。 
@@ -144,4 +143,3 @@
 - [参考にした記事](https://qiita.com/noritsune/items/17c20dccb0eb00f2622e)
 - [Slack API Official Docs](https://api.slack.com/) 
 - [OpenAI API](https://platform.openai.com/docs/introduction) 
-これらのファイル一式をGASプロジェクトに置いて appscript.json の設定を完了させ、Slack AppのEvent Subscriptionを正しく設定すれば、Botがテキストメッセージへの応答を自動化できます。
